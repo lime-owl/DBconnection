@@ -27,7 +27,7 @@ namespace DBconnection
             {
                 while (reader.Read())
                 {
-                    Console.WriteLine("Item");
+                    Console.WriteLine(reader["au_fname"].ToString() + " " + reader["au_lname"].ToString());
                 }
             }
 
